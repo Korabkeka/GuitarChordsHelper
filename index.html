@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guitar Chords Helper</h1>
+    <section id="guitar-tunner">
+        <label for="tunner">Tunning:</label>
+        <input type="text" name="tunner" id="tunner" placeholder="e-a-d-g-b-e"/>
+        <p id="error-message">Please enter valid notes and format and length, at least 4 notes, for exemple: e-a-d-g-b-e</p>
+        <button id="showTunning">Add</button>
+    </section>
+    <section id="chord-picker">
+        <label for="chord">Chord:</label>
+        <select name="chord" id="chord">
+            <option value="c-major">CM</option>
+            <option value="c-major-7maj">CM7</option>
+            <option value="c-minor">Cm</option>
+            <option value="c-minor-7min">Cm7</option>
+            <option value="c-minor-7min-5b">Cm7/5b</option>
+            <option value="c-major-7min">C7</option>
+            <option value="c#-major">C#M</option>
+            <option value="c#-major-7maj">C#M7</option>
+            <option value="c#-minor">C#m</option>
+            <option value="c#-minor-7min">C#m7</option>
+            <option value="c#-minor-7min-5b">C#m7/5b</option>
+            <option value="c#-major-7min">C#7</option>
+            <option value="d-major">DM</option>
+            <option value="d-major-7maj">DM7</option>
+            <option value="d-minor">Dm</option>
+            <option value="d-minor-7min">Dm7</option>
+            <option value="d-minor-7min-5b">Dm7/5b</option>
+            <option value="d-major-7min">D7</option>
+            <option value="d#-major">D#M</option>
+            <option value="d#-major-7maj">D#M7</option>
+            <option value="d#-minor">D#m</option>
+            <option value="d#-minor-7min">D#m7</option>
+            <option value="d#-minor-7-5b">D#m7/5b</option>
+            <option value="d#-major-7min">D#7</option>
+            <option value="e-major">EM</option>
+            <option value="e-major-7maj">EM7</option>
+            <option value="e-minor">Em</option>
+            <option value="e-minor-7min">Em7</option>
+            <option value="e-minor-7min-5b">Em7/5b</option>
+            <option value="e-major-7min">E7</option>
+            <option value="f-major">FM</option>
+            <option value="f-major-7maj">FM7</option>
+            <option value="f-minor">Fm</option>
+            <option value="f-minor-7min">Fm7</option>
+            <option value="f-minor-7min-5b">Fm7/5b</option>
+            <option value="f-major-7min">F7</option>
+            <option value="f#-major">F#M</option>
+            <option value="f#-major-7maj">F#M7</option>
+            <option value="f#-minor">F#m</option>
+            <option value="f#-minor-7min">F#m7</option>
+            <option value="f#-minor-7min-5b">F#m7/5b</option>
+            <option value="f#-major-7min">F#7</option>
+            <option value="g-major">GM</option>
+            <option value="g-major-7maj">GM7</option>
+            <option value="g-minor">Gm</option>
+            <option value="g-minor-7min">Gm7</option>
+            <option value="g-minor-7min-5b">Gm7/5b</option>
+            <option value="g-7">G7</option>
+            <option value="g#-major">G#M</option>
+            <option value="g#-major-7maj">G#M7</option>
+            <option value="g#-minor">G#m</option>
+            <option value="g#-minor-7min">G#m7</option>
+            <option value="g#-minor-7min-5b">G#m7/5b</option>
+            <option value="g#-major-7maj">G#7</option>
+            <option value="a-major">AM</option>
+            <option value="a-major-7maj">AM7</option>
+            <option value="a-minor">Am</option>
+            <option value="a-minor-7min">Am7</option>
+            <option value="a-minor-7min-5b">Am7/5b</option>
+            <option value="a-major-7maj">A7</option>
+            <option value="a#-major">A#M</option>
+            <option value="a#-major-7maj">A#M7</option>
+            <option value="a#-minor">A#m</option>
+            <option value="a#-minor-7min">A#m7</option>
+            <option value="a#-minor-7min-5b">A#m7/5b</option>
+            <option value="a#-major-7maj">A#7</option>
+            <option value="b-major">BM</option>
+            <option value="b-major-7maj">BM7</option>
+            <option value="b-minor">Bm</option>
+            <option value="b-minor-7min">Bm7</option>
+            <option value="b-minor-7min-5b">Bm7/5b</option>
+            <option value="b-major-7maj">B7</option>
+        </select>
+        
+        <button id="showChord">Add</button>
+    </section>
+
+    <section id="chords"></section>
+
+    <section id="guitarBoards"></section>
+
+    <script src="app.js"></script>
+</body>
+</html>
